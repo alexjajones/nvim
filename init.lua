@@ -24,7 +24,6 @@ require('lazy').setup {
   { import = 'plugins.gruvbox' },
   { import = 'plugins.treesitter' },
 
-  { import = 'custom.lsp' },
   { import = 'custom.plugins' },
 }
 
