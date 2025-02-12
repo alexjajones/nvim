@@ -67,6 +67,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- [E]xplore
 vim.keymap.set('n', '<C-e>', ':Explore<CR>')
 vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>l', vim.lsp.buf.format)
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
