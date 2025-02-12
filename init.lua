@@ -3,7 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = false
-vim.opt.tabstop=4
+vim.opt.tabstop = 4
 vim.opt.number = true
 
 vim.opt.relativenumber = true
@@ -132,15 +132,15 @@ require('lazy').setup {
     },
     config = function()
       -- [[ Configure Telescope ]]
-      local actions = require("telescope.actions")
+      local actions = require 'telescope.actions'
       require('telescope').setup {
         defaults = {
           mappings = {
             i = {
-              ["<C-k>"] = actions.move_selection_previous,
-              ["<C-j>"] = actions.move_selection_next,
-              ["<ESC>"] = actions.close,
-            }
+              ['<C-k>'] = actions.move_selection_previous,
+              ['<C-j>'] = actions.move_selection_next,
+              ['<ESC>'] = actions.close,
+            },
           },
         },
         extensions = {
