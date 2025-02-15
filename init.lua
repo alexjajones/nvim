@@ -1,4 +1,5 @@
-local remaps = require "remaps"
+local remaps = require 'remaps'
+local load_plugin = require('helpers').load_plugin
 
 remaps.applyRemaps()
 
@@ -13,18 +14,16 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-  { import = 'plugins.sleuth' },
-  { import = 'plugins.lazydev' },
-  { import = 'plugins.gitsigns' },
-  { import = 'plugins.telescope' },
-  { import = 'plugins.treesitter' },
-  { import = 'plugins.conform' },
-  { import = 'plugins.autocomplete' },
-  { import = 'plugins.mini' },
-  { import = 'plugins.gruvbox' },
-  { import = 'plugins.treesitter' },
-
-  { import = 'custom.plugins' },
+  load_plugin 'sleuth',
+  load_plugin 'lazydev',
+  load_plugin 'gitsigns',
+  load_plugin 'telescope',
+  load_plugin 'treesitter',
+  load_plugin 'conform',
+  load_plugin 'autocomplete',
+  load_plugin 'mini',
+  load_plugin 'gruvbox',
+  load_plugin 'lsp',
 }
 
 vim.cmd 'source ~/.config/nvim/netrw_remaps.vim'
