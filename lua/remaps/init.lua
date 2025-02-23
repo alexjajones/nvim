@@ -10,6 +10,7 @@ local function applyRemaps()
   vim.opt.shiftwidth = 2
   vim.opt.softtabstop = 2
   vim.opt.number = true
+  vim.g.noswapfile = true
 
   vim.opt.relativenumber = true
 
