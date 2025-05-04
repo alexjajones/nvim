@@ -24,6 +24,8 @@ require('lazy').setup {
   load_plugin 'mini',
   load_plugin 'gruvbox',
   load_plugin 'lsp',
+  load_plugin 'metals'
+  -- load_plugin 'harpoon',
 }
 
 vim.cmd 'source ~/.config/nvim/netrw_remaps.vim'
